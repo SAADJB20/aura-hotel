@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+/* giving the body a font  */
+
+body {
+    font-family: "popins", sans-serif;
+  }
+
+/* partie header nadya*/
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/room1.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+
+
+}
+
+/* permet de cree wa7d espace mabin items*/
+
+.space{
+  display: flex;
+  font-size: 30px;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.AURA {
+  text-decoration: none;
+  font-size: 35px;
+  color: #f6ffff;
+  font-weight: bold;
+  }
+
+
+.nav-links{
+
+  flex: 1;  /* permet de invisibler les point de list */
+  text-align: right;
+
+}
+
+
+
+.nav-links ul li{
+  list-style : none ;
+  display: inline-block;
+  padding: 5px 20px;
+  position: relative;
+}
+
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+
+.nav-links ul li ::after{
+  content:"";
+  width: 0%;
+  height: 3px;
+  background: #00c0c0;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li :hover::after{
+  width: 100%;
+}
+
+
+/*-------exemples des parties--------*/
+
+.saad{
+   
+   color: #f6ffff;
+   position: absolute;
+   top: 50%;
+   left:25%;
+   text-align: center;
+   font-size: 30px;
+}
+
+
+.ziko{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  font-size: 30px;
+  
+}
+
+.ahmed{
+  width: 100%;
+  color: rgb(171, 219, 219);
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 100px;
+  font-size: 20px;
+  background-color: rgb(50, 50, 67);
+}
+
+
+
+
+
+
+
+
+
+
