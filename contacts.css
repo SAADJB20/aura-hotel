@@ -13,7 +13,7 @@ body {
     font-family: "popins", sans-serif;
   }
 
-/* partie header */
+/* partie header nadya*/
 
 .header{
   width: 100%;
@@ -26,8 +26,9 @@ body {
 
 }
 
+/* permet de cree un espace items*/
 
-.space{
+nav{
   display: flex;
   font-size: 30px;
   padding: 2% 6%;
@@ -92,7 +93,7 @@ body {
 
 
  /*small screen toggle*/
- @media (max-width:700px) {
+ @media (max-width :700px) {
   .nav-links ul li {
   display: block;
   padding: 18px;
@@ -103,7 +104,7 @@ body {
   border-radius: 8px;
   backdrop-filter: blur(20px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-   height: 80vh;
+  height: 80vh;
   width: 200px;
 
   top: 0;
@@ -314,7 +315,7 @@ body {
  }
  
  
- @media( max-width:700px){
+ @media(max-width :700px){
    .contacte{
      padding: 50px;
    }
@@ -375,21 +376,19 @@ body {
  }
  
  
- .container .contacteInfo {
+ .contacteInfo {
    display: flex;
-   align-items: center;
-   width: 75%;
-   margin-left: 140px;
+   width: 100%;
  
  }
- .container .contacteInfo .box{
+ .contacteInfo .box{
    width: 100%;
    position: relative;
    padding-left: 100px;
    display: flex;
  }
  
- .container .contacteInfo .box .icons {
+ .contacteInfo .box .icons {
      min-width: 40px;
      height: 40px;
      color: #ffffff7c;
@@ -399,7 +398,7 @@ body {
      font-size: 25px;
  }
  
- .container .contacteInfo .box .text {
+ .contacteInfo .box .text {
    display: flex;
    font-size: 13px;
    margin-top: 10px;
@@ -410,7 +409,7 @@ body {
  
  
  
- .container .contacteInfo .box .text p {
+  .contacteInfo .box .text p {
    font-weight: 500;
    font-size: 1.1em;
    margin-right: 10px;
@@ -420,16 +419,31 @@ body {
  
  
  @media(max-width:700px){
-   .container .contacteInfo{
+  .contacteInfo{
      flex-direction: column;
      margin-top: 50px;
-     margin-left: 40px;
      width: 100%;
      padding-right: 40%;
    }
+
+   .contacteInfo .box{
+     padding-left: 0px;
+  }
+  
+  .contacteInfo {
+    display: flex;
+    width: 100%;
+    margin-left: 55px;
+  
+  }
+  
+  footer hr {
+   
+    margin-left: 0px;
+    margin-right: 0px;
   
  
  }
  
  
- 
+ }
