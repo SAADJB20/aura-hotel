@@ -301,8 +301,7 @@ nav .fa{
 
   .card h1 {
     line-height: 3rem;
-    font-size:30px;
-
+    font-size:12px;
     border: none;
     align-content: center;
   
@@ -312,6 +311,8 @@ nav .fa{
   
   .card{
     margin-bottom: 1rem;
+    padding: 10px;
+
   }
   
   .content p {
