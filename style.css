@@ -105,7 +105,7 @@ nav .fa{
 
 
  /*small screen toggle*/
- @media (width < 820px) {
+ @media (max-width:700px) {
   .nav-links ul li {
   display: block;
   padding: 18px;
@@ -293,7 +293,7 @@ nav .fa{
 
 
 
-@media (width < 1200px){
+@media (max-width:700px){
 
   .content{
     margin-bottom: 100%;
@@ -324,7 +324,7 @@ nav .fa{
 
   .booking {
     flex-direction: column;
-    bottom: -30rem;
+    bottom: -55rem;
   }
 
   .booking form {
