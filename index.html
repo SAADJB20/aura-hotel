@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <link rel="icon" href="aura.png">
+    <link rel="icon" href="images/web.png">
     <title>AURA</title>
 </head>
 <body>
@@ -11,37 +11,98 @@
     <section class="header">
 
         <nav class="space">
-
-            <a href="index.html" class="AURA">AURA</a>
+           
+            <a href="index.html" ><img class="logo" src="images/logo.png"></a>
+           
 
             <div class="nav-links" id="navLinks">
+
+              <i class="fa fa-times" onclick="hidemenu()"></i>
+
               <ul>
                 <li><a href="index.html">Acceuil</a></li>
                 <li><a href="#Hotels">Hotels</a></li>
                 <li><a href="contacts.html">Contactez-nous</a></li>
                 <li><a href="login.html">Connexion</a></li>
-              </ul>      
+              </ul>
+
             </div>
             
-            
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+
         </nav>
 
-   <div class="saad">
-       <h1> Partie de reservation d'hotel(Saad)</h1>
-   </div>
 
-    </section>
+           <!--Java Script for toggle menu-->
+           <script>
+            var navLinks = document.getElementById("navLinks");
+            function showmenu() {
+              navLinks.style.right = "0";
+            }
+            function hidemenu() {
+              navLinks.style.right = "-200px";
+
+            }
+          </script> 
+
+        <div class="container">
+
+            <div class="content">
+                <div class="card">
+                  <h1>Commencez Votre Aventure Avec<span> Aura</span>.</h1>
+                </div>
+              
+              <p> Le luxe, l’innovation et la simplicité n’attendent plus que vous. Réservez dès maintenant  et 
+                rejoignez l’Hôtel Aura, où chaque séjour devient un souvenir inoubliable. </p>
+            </div>
+
+        </div> 
+        
+    
+
+        <section class="booking">
+          <form action="/" class="form">
+            <div class="inputs">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <label for="Location">Location</label>
+              <input type="text" placeholder="Où allez-vous ?" id="Location">
+            </div>
+
+            <div class="inputs">
+              <span></span>
+              <label for="1">Date d'arrivée</label>
+              <input type="date" id="1">
+            </div>
+
+            <div class="inputs">
+              <span></span>
+              <label for="2">Date de départ</label>
+              <input type="date" id="2">
+            </div>
+
+            <div class="inputs">
+              <span><i class="fa-solid fa-users"></i></span>
+              <label for="Personnes">Personnes</label>
+              <input type="number" id="Personnes" placeholder="3">
+            </div>
+          
+           
+              <button class="cssbuttons-io">
+              <span><a href="index.html">Recherchez </a><span> <i class="fa-solid fa-magnifying-glass"></i></span>  </span>
+
+              </button>
 
 
-    <section class="ziko">
-        <h1>Parties des chombres et prix (ziko)</h1>
+            
+          </form>
+        </section>
 
-    </section>
-
-    <footer class="ahmed">
-        <h1>Parties des offres et des informations pour AURA (Ahmed)</h1>
-
-    </footer>
+    
+              
+    
+      </section>
+   
     
 </body>
 </html>
+
