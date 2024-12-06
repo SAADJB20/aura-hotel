@@ -93,7 +93,7 @@ body {
 
 
  /*small screen toggle*/
- @media (max-width: 820px) {
+ @media (max-width: 700px) {
   .nav-links ul li {
   display: block;
   padding: 18px;
@@ -420,7 +420,7 @@ body {
  
  
  
- @media(max-width:600px){
+ @media(max-width:700px){
    .container .contacteInfo{
      flex-direction: column;
      margin-top: 50px;
