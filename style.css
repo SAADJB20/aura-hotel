@@ -105,7 +105,7 @@ nav .fa{
 
 
  /*small screen toggle*/
- @media (width < 700px) {
+ @media (width < 820px) {
   .nav-links ul li {
   display: block;
   padding: 18px;
