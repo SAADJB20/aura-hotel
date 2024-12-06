@@ -1,11 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="icon" href="images/web.png">
+    <title>contacts</title>
 </head>
 <body>
-    <h1>contacte (saad)</h1>
+    <section class="header">
+
+        <nav class="space">
+           
+            <a href="index.html" ><img class="logo" src="images/logo.png"></a>
+            
+            
+            <div class="nav-links" id="navLinks">
+              <i class="fa  fa-times" onclick="hidemenu()"></i>
+
+              <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="#Hotels">Hotels</a></li>
+                <li><a href="contacts.html">Contactez-nous</a></li>
+                <li><a href="login.html">Connexion</a></li>
+              </ul>      
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+
+            
+        </nav>
+
+           <!--Java Script for toggle menu-->
+           <script>
+            var navLinks = document.getElementById("navLinks");
+            function showmenu() {
+              navLinks.style.right = "0";
+            }
+            function hidemenu() {
+              navLinks.style.right = "-200px";
+            }
+          </script> 
+
+
+        <section class="contacte" id="Contacter">
+            <div class="content">
+                <h2>Contactez - nous</h2>
+                <p>Vous cherchez un hôtel parfait pour votre séjour ? Nous sommes là pour rendre votre expérience simple et agréable, que ce soit pour le travail ou les loisirs. Contactez-nous pour plus d’informations !</p>
+              </div>
+                   <div class="contacteForm">
+                     <form>
+                        <h2>Envoyer un Message</h2>
+
+                         <div class="Select-menu">
+                            <div>
+                              <div class="Select-btn">
+                                <span class="S-text">Type de demande</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                              </div>
+                              
+                              <ul class="options">
+                                <li class="option">
+                                    <span class="option-text">Demende génerale</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">Réclamation</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">incident technique</span>
+                                </li>
+                                <li class="option">
+                                    <span class="option-text">Autres</span>
+                                </li>
+                              </ul>
+                            </div>
+                         </div>
+                         <script src="script.js"></script>
+                        
+                        <div class="inputBox">
+                            <input type="text"  required /> 
+                            <span>Nom et prénom</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" required /> 
+                            <span>Email</span>
+                        </div>                                      
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Ecrire votre Message</span>
+                            </div>                                      
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Envoyer">
+                        </div>
+                     </form>
+                   </div>
+                  
+          </section>
+         
+</section>
+</section>
+
+    <footer>
+        
+            <h3>AURA</h3>
+             <h5>Copyright © 2023 AURA</h5>
+             <hr>
+             <div class="container">
+                <div class="contacteInfo">
+                    <div class="box">
+                        <div class="icons"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="text">
+                            <p>safi ville 345</p>
+                         </div>
+                    </div>
+                    <div class="box">
+                        <div class="icons"><i class="fa-solid fa-phone"></i></div>
+                        <div class="text">
+                            <p>(+212) 5 33 45 45 55</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icons"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="text">
+                            <p>AURAHotels@gmail.com</p>
+                        </div>
+                    </div>
+               </div>
+             </div>
+      </footer>
+
+  
 </body>
 </html>
