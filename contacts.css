@@ -92,7 +92,7 @@ body {
 
 
  /*small screen toggle*/
- @media (width < 820px) {
+ @media (max-width:700px) {
   .nav-links ul li {
   display: block;
   padding: 18px;
@@ -314,7 +314,7 @@ body {
  }
  
  
- @media( width < 1000px){
+ @media( max-width:700px){
    .contacte{
      padding: 50px;
    }
@@ -419,7 +419,7 @@ body {
  
  
  
- @media(width < 700px){
+ @media(max-width:700px){
    .container .contacteInfo{
      flex-direction: column;
      margin-top: 50px;
