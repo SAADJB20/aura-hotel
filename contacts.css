@@ -13,7 +13,7 @@ body {
     font-family: "popins", sans-serif;
   }
 
-/* partie header nadya*/
+/* partie header */
 
 .header{
   width: 100%;
@@ -26,7 +26,6 @@ body {
 
 }
 
-/* permet de cree wa7d espace mabin items*/
 
 .space{
   display: flex;
