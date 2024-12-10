@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+}
+
+
+:root {
+  --primary-color: #2c3855;
+  --primary-color-dark: #435681;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --extra-light: #f3f4f6;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+
+/* giving the body a font  */
+
+body {
+    font-family: "popins", sans-serif;
+  }
+
+/* partie header  */
+
+.header{
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/alexandra-gorn-JIUjvqe2ZHg-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+
+
+}
+
+/* permet de cree un espace  items*/
+
+nav{
+  display: flex;
+  font-size: 30px;
+  padding: 2% 6%;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo {
+   width:180px;
+  
+  }
+
+ 
+
+
+.nav-links{
+  text-align: right;
+  flex: 1;  
+  padding-bottom: 10px;
+
+}
+
+
+
+.nav-links ul li{
+  list-style : none ;
+  display: inline-block;
+  padding: 5px 20px;
+  position: relative;
+}
+
+
+.nav-links ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+
+.nav-links ul li ::after{
+  content:"";
+  width: 0%;
+  height: 3px;
+  background: #00c0c0;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li :hover::after{
+  width: 100%;
+}
+
+nav .fa{
+  display: none;
+}
+
+
+
+
+
+ /*small screen toggle*/
+ @media (max-width: 700px) {
+
+  .nav-links ul li {
+   display: block;
+  padding: 18px;
+  }
+  .nav-links {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  height: 80vh;
+  width: 200px;
+  top: 0;
+  right: -200px;
+  text-align: left;
+  z-index: 1111;
+  transition: 0.8s;
+  }
+  nav .fa {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 22px;
+  cursor: pointer;
+  }
+  .nav-links ul {
+  padding: 30px 0px;
+  }
+}
+  
+
+
+
+
+.container {
+  padding: 5rem 6rem ;
+}
+
+
+.content {
+  max-width: 70%;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  padding: 5rem 2rem;
+}
+
+.card h1 {
+  line-height: 3rem;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  color:#ffffff;
+
+}
+
+.card span{
+  color: #00c0c0;
+}
+
+.card{
+  font-size: 8rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 1px 0.1px rgb(1,1,1.1);
+  border-radius: 1.2rem;
+}
+
+.content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 10px;
+  color: #747474;
+  text-align: center;
+  
+}
+
+
+.booking {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  align-items: center;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .booking form {
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 9rem;
+  }
+
+
+  .booking  input {
+    width: 100%;
+    padding: 10px 0px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid var(--text-dark);
+    color: var(--text-dark);
+  }
+
+
+.booking label{
+  font-size: 20px;
+  padding-left: 2px;
+}
+
+
+
+
+/* From Uiverse.io by devkatyall */ 
+.cssbuttons-io {
+  position: relative;
+  font-weight: 800;
+  font-size: 17px;
+  border-radius: 0.9em;
+  cursor: pointer;
+  border: none;
+  background: #00c0c0 ;
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px;
+}
+
+.cssbuttons-io a{
+  text-decoration: none;
+  color: #f3f4f6;
+}
+
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+
+
+
+
+@media (max-width: 700px){
+
+  .content{
+    margin-bottom: 100%;
+  }
+
+  .card h1 {
+    line-height: 3rem;
+    font-size:12px;
+    border: none;
+    align-content: center;
+  
+  }
+  
+  
+  
+  .card{
+    margin-bottom: 1rem;
+    padding: 10px;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 10px;
+    
+  }
+  
+
+  .booking {
+    flex-direction: column;
+    bottom: -33rem;
+  }
+
+  .booking form {
+    grid-template-columns: repeat(1,1fr);
+  }
+ 
+  
+  
+ 
+  
+}
+
+
