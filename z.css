@@ -55,7 +55,23 @@
      box-sizing: border-box;
      scroll-behavior: smooth;
 }
+body{
+    background-color: #D6F4FF;
+    font-family:"Times New Roman", Times, serif ;
 
+}
+
+#inf_sh11{
+    float: left;
+    width: 95%;
+    height: 6%;
+    margin-left: 2.75%;
+    border-bottom: 1px solid #00aab5;
+    border-right: 1px solid #00aab5;
+    margin-bottom: 2%;
+    overflow: hidden;
+    padding-left: 1%;
+}
 
 
 
@@ -64,12 +80,12 @@
 
 
 .z_tache{
+    margin-top: 5%;
     color: #303030;
     width: 100%;
     height: 450%;
     padding-top:1%;
     padding-bottom: 1%;
-    background-color: #E3F0E3;
     font-family:Georgia, serif;
     
     
@@ -90,13 +106,27 @@
         overflow: hidden;
     
     }
+
+    .parent_imgs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    }
+    .parent_imgs div{
+        background-color: #00aab5;
+    
+        width: 350px;
+        margin:1%;
+        box-shadow:6px 6px 15px gray;
+    }
     
     #div_rb1{
-        background-color: #007e82;
+        background-color: #00aab5;
         height: 400px;
         width: 300px;
         margin:1%;
-        padding:1%;
+       /* padding:1%;*/
         box-shadow:6px 6px 15px gray;
     }
         
@@ -123,8 +153,14 @@
         padding-left: 2%;
     }
     
+    #h1zG{
+        text-align: left;
+        margin-top: 2%;
+    
+    }
     
     #h1z{
+        padding: 2.5%;
         
         text-align: left;
         margin-top: 2%;
@@ -147,6 +183,7 @@
         overflow: hidden;
     }
     #txt{
+        padding: 2%;
         text-align: center;
         margin: auto;
     }
@@ -157,10 +194,24 @@
         width: 95%;
         height: 6%;
         margin-left: 2.5%;
-        border-bottom: 1px solid #007e82;
-        border-right: 1px solid #007e82;
+        border-bottom: 1px solid #00aab5;
+        border-right: 1px solid #00aab5;
         margin-bottom: 2%;
         overflow: hidden;
+    }
+
+    #inf_sh1{
+    
+        float: left;
+        width: 45%;
+        height: 6%;
+        margin-left: 2.75%;
+        border-bottom: 1px solid #00aab5;
+        border-right: 1px solid #00aab5;
+        margin-bottom: 2%;
+        overflow: hidden;
+        padding-left: 1%;
+    
     }
     
     #inf_sh{
@@ -169,8 +220,8 @@
         width: 45%;
         height: 6%;
         margin-left: 2.75%;
-        border-bottom: 1px solid #007e82;
-        border-right: 1px solid #007e82;
+        border-bottom: 1px solid #00aab5;
+        border-right: 1px solid #00aab5;
         margin-bottom: 2%;
         overflow: hidden;
         padding-left: 1%;
@@ -186,7 +237,7 @@
     #div_rb{
         float: left;
         width: 40%;
-        background-color: #007e82;
+        background-color: #00aab5;
         margin: 5%;
         margin-top: 5%;
         box-shadow:6px 6px 15px gray;
@@ -214,11 +265,12 @@
         margin-left:2.75% ;
         }
     #table_sa{
-        border-right: 1px solid #007e82; 
-        border-bottom: 1px solid #007e82;
+        border-right: 1px solid #00aab5; 
+        border-bottom: 1px solid #00aab5;
         width: 95%;
         margin-left:2.5% ;
         font-size:75%;
+        text-align: center;
     
     }
     /*
@@ -246,9 +298,9 @@
     
     }
     .parent div{
-        background-color: #007e82;
+        background-color: #00aab5;
     
-        width: 300px;
+        width: 350px;
         margin:1%;
         padding:1%;
         box-shadow:6px 6px 15px gray;
@@ -260,13 +312,14 @@
     }
     
     #div_apr{
+        padding-right: 2%;
         margin: 2%;
         margin-left: 5%;
         font-size:75%;
         width: 95%;
         margin-left: 2.5%;
-        border-bottom: 1px solid #007e82;
-        border-right: 1px solid #007e82;
+        border-bottom: 1px solid #00aab5;
+        border-right: 1px solid #00aab5;
         margin-bottom: 2%;
     
     }
@@ -316,3 +369,27 @@
     
     
     */
+
+
+
+    .parent1{
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+    }
+    .parent1 div{
+        background-color: #00aab5;
+    
+        width: 610px;
+        margin:1%;
+        box-shadow:6px 6px 15px gray;
+    }
+
+
+
+
+
+
+    
