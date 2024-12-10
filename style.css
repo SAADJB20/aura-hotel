@@ -206,7 +206,7 @@ nav .fa{
     flex: 1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 9rem;
+    gap: 6rem;
   }
 
 
@@ -307,7 +307,6 @@ nav .fa{
   
   
   .card{
-    margin-bottom: 1rem;
     padding: 10px;
   }
   
@@ -321,11 +320,15 @@ nav .fa{
 
   .booking {
     flex-direction: column;
-    bottom: -33rem;
+    margin-bottom: 100px;
+
+
   }
 
   .booking form {
     grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+
   }
  
   
@@ -335,3 +338,7 @@ nav .fa{
 }
 
 
+.center{
+  text-align:center ;
+  margin-left:40% ;
+}
